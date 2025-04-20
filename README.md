@@ -1,8 +1,6 @@
 # AURA-chatbot
 offline chatbot using advanced Machine Learning (ML) and Large Language Models (LLM)
 
-# 💬 AURA: Conversational AI with Falcon-7B
-
 AURA is a simple interactive chatbot built using the [Falcon-7B-Instruct](https://huggingface.co/tiiuae/falcon-7b-instruct) model via Hugging Face's Transformers library. This chatbot keeps track of the conversation and responds contextually.
 
 ---
@@ -22,7 +20,7 @@ AURA is a simple interactive chatbot built using the [Falcon-7B-Instruct](https:
 ### 1. Clone this repository
 
 ```bash
-git clone https://github.com/your-username/aura-chatbot.git
+git clone https://github.com/Pankaj1662005/AURA-chatbot/.git
 cd aura-chatbot
 ```
 
