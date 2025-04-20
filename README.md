@@ -1,12 +1,6 @@
 # AURA-chatbot
 offline chatbot using advanced Machine Learning (ML) and Large Language Models (LLM)
 
-
-Got it! Here's the actual `README.md` **file content** in proper format — you can copy-paste this directly into a `README.md` file:
-
----
-
-```markdown
 # 💬 AURA: Conversational AI with Falcon-7B
 
 AURA is a simple interactive chatbot built using the [Falcon-7B-Instruct](https://huggingface.co/tiiuae/falcon-7b-instruct) model via Hugging Face's Transformers library. This chatbot keeps track of the conversation and responds contextually.
@@ -45,41 +39,6 @@ source venv/bin/activate  # On Windows use: venv\Scripts\activate
 pip install torch transformers accelerate
 ```
 
----
-
-## 🚀 Usage
-
-Run the chatbot with:
-
-```bash
-python main.py
-```
-
-You will enter an interactive session like:
-
-```
-> Hello
-AURA: Hi there! How can I assist you today?
-```
-
-To stop the conversation, simply use `Ctrl + C`.
-
----
-
-## 🧾 Code Breakdown
-
-```python
-model = "tiiuae/falcon-7b-instruct"
-tokenizer = AutoTokenizer.from_pretrained(model)
-pipeline = pipeline(
-    "text-generation",
-    model=model,
-    tokenizer=tokenizer,
-    torch_dtype=torch.bfloat16,
-    device_map="auto",
-    trust_remote_code=True
-)
-```
 
 - Loads Falcon-7B-Instruct with tokenizer
 - Sets up generation pipeline with device auto-mapping and bf16 precision
@@ -108,6 +67,3 @@ This is an educational project. The chatbot may generate unpredictable or incorr
 
 ```
 
----
-
-Let me know if you want to turn this into a GitHub project with a `main.py` and everything organized, or if you want to make the README fancier with badges or screenshots!
